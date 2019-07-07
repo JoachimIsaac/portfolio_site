@@ -11,7 +11,91 @@
     .blog-container
         display: grid
         grid-template-columns: 1fr 1fr 1fr
-        grid-template-rows: 500px
+        grid-template-rows: 588px 588px 
         grid-gap: 15px
+        overflow: hidden
+        .post 
+            position: relative
+            transition: all .4s ease-in-out
+            cursor: pointer
+            height: 100%
+            overflow: hidden
+            &:hover .detials
+                transform: translate3d(0,-588px,0)
+            &:hover .more .button
+                color: #ff5253
+                transform: translate3d(0,0,0)
+                opacity: 1
+                
+
+            
+            //hover effect on post 
+        .post-img
+            height: 100%
+            width: 100%
+            background-position: center center !important
+            background-repeat: no-repeat !important
+            background-size: cover !important
+            background-color: #f2f3f5 !important
+        .detials
+            background: white 
+            padding: 35px
+            position: absolute
+            top: 100%
+            width: 100%
+            transform: translate3d(0,-200px,0)
+            transition: all .4s ease-in-out
+            h4 
+                font-size: 1.1rem
+                color: #13171a 
+                text-transform: uppercase
+                font-weight: 700
+                letter-spacing: 2px 
+                margin-bottom: 1.8rem
+            p
+                font-size: 1rem
+                color: #919191
+                font-weight: 400
+                letter-spacing: 2px 
+                margin-bottom: 1.8rem
+                line-height: 1.5
+    
+        
+    .more
+        position: absolute
+        z-index: 3
+        width: 100%
+        bottom: 0
+        background: white
+        padding: 35px 
+        
+        .button
+            font-size: 1.3rem
+            color: #13171a 
+            font-weight: 700
+            letter-spacing: 2px 
+            line-height: 1.5
+            display: inline-block 
+            border-bottom: 2px solid #13171a 
+            text-transform: uppercase
+            padding-bottom: 10px
+            transition: all .4s ease-in-out .1s
+            opacity: 0
+            transform: translate3d(0,40px,0)
+
+    
+    
+        
+                
+
+
+
+
+
+
+    
+            
+
+
 
 
