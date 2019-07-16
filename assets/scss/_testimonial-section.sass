@@ -26,6 +26,55 @@
         display: grid
         grid-template-columns: 12% 76% 12%
         grid-gap: 15px
+
+        .test-sides
+            display: flex 
+            justify-content: center 
+            align-items: center
+            .hover-bg
+                background: rgba(255,53,53,0) 
+                height: 100%
+                width: 100%
+                transition: all .2s ease-in-out
+                cursor: pointer
+            &:hover .hover-bg
+                background: rgba(255,53,53,.8) 
+                height: 100%
+                width: 100%
+            .name
+                color: white
+                font-weight: 700
+                font-size: 2rem
+                transition: all .2s ease-in-out .2s
+                display: flex
+                align-items: center 
+                justify-items: center
+                height: 100%
+                width: 100%
+                transform: translate3d(0,50px,0)
+                opacity: 0
+            &:hover .name
+                color: white
+                font-weight: 700
+                font-size: 2rem
+                transition: all .2s ease-in-out .2s
+                display: flex
+                align-items: center 
+                justify-items: center
+                height: 100%
+                width: 100%
+                transform: translate3d(0,0,0)
+                opacity: 1
+
+
+        .person-img 
+            background-position: center center !important
+            background-repeat: no-repeat !important
+            background-size: cover !important
+            background-color: #f2f3f5 !important
+            height: 80%
+            width: 100%
+           
         
 
         .test-center
@@ -44,11 +93,13 @@
             .header 
                 display: flex
                 padding-bottom: 50px
-                user-img
+                .user-img
                     width: 150px
-                    img 
-                        display: flex 
-                        width: 100%
+                    height: 150px
+                    background-position: center center !important
+                    background-repeat: no-repeat !important
+                    background-size: cover !important
+                   
                 .info 
                     display: flex
                     justify-content: center
